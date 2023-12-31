@@ -1,34 +1,18 @@
 # be-micromanaging
 
 ```html
-<div itemscope>
-    <script nomodule be-micromanaging>
-        export const calculator = [{
-            ifAllOf:['A', 'B'],
-            do: ({A, B}) => ({
-                C: A + B
-            })
-        }]
-    </script>
-    <meta itemprop=A content=test1>
-    <meta itemprop=B content=test2>
-</div>
+<div itemscope be-micromanaging='{
+  "types"; ["number", "date", "string"],
+  "props": ["age", "dob", "surname"],
+  "expr": [2, ", age: ", 0, ", dob: ", 1], 
+  "model" : {}
+}'></div>
 ```
 
 Generates:
 
 ```html
 <div itemscope>
-    <script nomodule be-micromanaging>
-        export const someName = {
-            ifAllOf:['A', 'B'],
-            do: ({A, B}) => ({
-                C: A + B
-            })
-        }
-    </script>
-    <meta itemprop=A content=test1>
-    <meta itemprop=B content=test2>
-    <meta itemprop=C content=test1test2>
+   <span itemprop=surname></span><span>, age: </span><data itemprop=age></data><span>, dob: </span><time itemprop=dob></time>
 </div>
 ```
