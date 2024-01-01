@@ -8,9 +8,7 @@
 		"strict": true,
 	},
 	"files": [
-		"be-bound.ts",
-		"MyCustomElement/MyCustomElement.ts",
-		"AnotherCustomElement/AnotherCustomElement.ts"
+		"be-hivior.ts"
 	],
 	"exclude":[
 		"node_modules"
