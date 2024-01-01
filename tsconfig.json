@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"sourceMap": false,
+		"experimentalDecorators": false,
+		"newLine": "LF",
+		"strict": true,
+	},
+	"files": [
+		"be-bound.ts",
+		"MyCustomElement/MyCustomElement.ts",
+		"AnotherCustomElement/AnotherCustomElement.ts"
+	],
+	"exclude":[
+		"node_modules"
+	]
+
+}

@@ -3,8 +3,29 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "files": [
+    "*.js",
+    "types.d.ts"
+  ],
+  "types": "types.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node node_modules/may-it-serve",
+    "test": "playwright test",
+    "safari": "npx playwright wk http://localhost:3030",
+    "update": "ncu -u && npm install"
+  },
+  "dependencies": {
+    "be-enhanced": "0.0.57",
+    "be-hive": "0.0.128",
+    "be-intl": "0.0.19",
+    "be-value-added": "",
+    "trans-render": "0.0.720",
+    "xtal-element": "0.0.580"
+  },
+  "devDependencies": {
+    "be-definitive": "0.0.111",
+    "may-it-serve": "0.0.6",
+    "@playwright/test": "1.40.1"
   },
   "author": "",
   "license": "MIT"
